@@ -10,7 +10,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-COHERE_API_KEY = os.getenv("cohere_apikey")
+COHERE_API_KEY = os.getenv("cohere_api")
 co = cohere.Client(COHERE_API_KEY)
 
 UPLOAD_FOLDER = 'uploads'
