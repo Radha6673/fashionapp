@@ -2,11 +2,15 @@ from flask import Flask, request, jsonify
 import cohere
 from flask_cors import CORS
 import os
+from dotenv import load_dotenv
+
+load_dotenv() 
+
 
 app = Flask(__name__)
 CORS(app)
 
-COHERE_API_KEY = "ifOs1xlUFRtB0XYsP53wOdy1pHy0PpLmsRuNOXKu"  
+COHERE_API_KEY = os.getenv("cohere_apikey")
 co = cohere.Client(COHERE_API_KEY)
 
 UPLOAD_FOLDER = 'uploads'
