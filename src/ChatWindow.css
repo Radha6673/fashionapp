@@ -1,0 +1,21 @@
+/* ChatWindow.css */
+
+input.form-control {
+    background-color: #f9f9f9;
+    border: none;
+  }
+  
+  input.form-control:focus {
+    box-shadow: none;
+    background-color: #fff;
+  }
+  
+  button.btn-primary {
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+    border: none;
+  }
+  
+  button.btn-success {
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+    border: none;
+  }
